@@ -1,0 +1,1113 @@
+/* 用来美化首页 */
+/* 基础公共样式：清除默认样式 + 设置通用样式 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+  
+body {
+    font: 14px/1.5 "PingFangSC-Regular", "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.emerge {
+    animation: emerge 0.4s;
+}
+
+.fade {
+    animation: fade 0.4s;
+}
+
+/* 注释样式 */
+
+.tooltip {
+    position: fixed;
+    padding: 10px;
+    border: 1px solid #b3c9ce;
+    border-radius: 4px;
+    text-align: center;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+/* header -----------------------------------------------------------------------------*/
+
+
+.header {
+    margin: 0 auto;
+    height: 60px;
+}
+
+.header #logo {
+    float: left;
+    width: 110px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.header #logo2 {
+    width: 50%;
+    display: none;
+}
+
+.header #logo2 img {
+    width: 110px;
+    height: 24px;
+    margin: auto;
+    margin-bottom: 18px;
+}
+
+.header .user {
+    float: right;
+    margin-right: -80px;
+    margin-top: 20px;
+    font-size: 12.5px;
+}
+
+.header .user img {
+    float: right;
+    margin-left: 20px;
+    margin-top: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: black solid 1px;
+}
+
+.header .left li {
+    float: left;
+    margin-top: 20px;
+    margin-left: 14px;
+    font-size: 12px;
+}
+
+.header .headerEmerge1 {
+    display: none;
+}
+
+.header li:hover {
+    border-bottom: #000 solid 2px;
+}
+
+.header .right {
+    margin-right: 80px;
+}
+
+.header .right li {
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    font-size: 12.5px;
+}
+
+.header .right #shop svg {
+    margin-bottom: -2.5px;
+    margin-left: 5px;
+    height: 15px;
+    width: 15px;
+}
+
+.header .right #showInformationButton {
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.header .right #showInformationButton svg {
+    margin-left: 5px;
+    height: 10px;
+    width: 10px;
+}
+
+.header .right #searchButton {
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.header .right #searchButton svg {
+    margin-bottom: -4px;
+    margin-left: 5px;
+    width: 18px;
+    height: 100%;
+}
+
+.changeColor {
+    padding-bottom: 20px;
+    background-color: rgb(247, 247, 247);
+}
+
+.header #search input {
+    float: left;
+    width: 65%;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 0;
+    border: 1px solid black;
+    border-right: none;
+}
+
+.header #search svg {
+    float: left;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid black;
+    border-left: none;
+}
+
+.header #search svg:hover {
+    background-color:  #f2f2f2;
+}
+
+.header #search #searchCancel {
+    float: left;
+    height: 35px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 35px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+
+.header #search #searchCancel:hover{
+    background-color: #f3f5f7;
+}
+
+.header #search #searchCancel2 svg {
+    border: none;
+    display: none;
+}
+
+#moreInformation {
+    position: absolute;
+    z-index: 2;
+    margin-left: 20%;
+    margin-top: -5px;
+    width: 70%;
+    background-color: rgb(248, 248, 248);
+}
+
+
+#moreInformation {
+    float: left;
+}
+
+#moreInformation ul {
+    float: left;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+#moreInformation ul li {
+    margin-top: 20px;
+}
+
+#moreInformation ul li:last-child {
+    margin-bottom: 40px;
+}
+
+#moreInformation ul li:nth-child(2) {
+    margin-top: 30px;
+}
+
+#moreInformation p {
+    width: 100%;
+    height: 40px;
+    background-color: #f2f2f2;
+    border-bottom: #000 solid 2px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#moreInformation p span:hover{
+    border-bottom: #000 solid 1px;
+}
+
+
+.header .moreoptionsButton span {
+    padding: 30px 10px;
+    margin-left: -10px;
+    background-color: #f2f2f2;
+}
+
+.header #moreoptions {
+    display: none;
+}
+
+.header .moreoptionsButton #moreoptions {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: -24px;
+}
+
+.header #moreoptions li {
+    margin-top: 0;
+    padding-left: 20px;
+    width: 150px;
+    height: 60px;
+    background-color: #f2f2f2;
+    line-height: 60px;
+    font-size: 13px;
+}
+
+.header #moreoptions li:first-child{
+    margin-top: 20px;
+}
+
+.header #moreoptions li:hover {
+    background-color: #e1e1e1;
+    text-decoration: underline 1px solid black;
+    border-bottom: none;
+}
+
+.header #orderButton {
+    margin-top: 17px;
+    display: none;
+}
+
+#order {
+    position: absolute;
+    float: left;
+    width: 100%;
+}
+
+#order ul li {
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    line-height: 60px;
+    border: 1px solid #e1e1e1;
+    border-top: none;
+    background-color: #f2f2f2;
+}
+
+#order ul li a {
+    display: block;
+}
+
+
+#order ul li svg {
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+    height: 10px;
+    width: 10px;
+}
+
+#order ul ul li {
+    padding-left: 50px;
+}
+
+#order ul li:last-child {
+    border-bottom: 2px solid #666;
+}
+
+/* banner -----------------------------------------------------------------------------*/
+
+#banner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#bannerShow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#banner #bannerImage {
+    width: 300%;
+}
+
+#banner #bannerImage li {
+    width: 33.3%;
+    float: left;
+}
+
+#banner #bannerImage li .Goods1 {
+    margin-top: 10%;
+    margin-left: 5%;
+    color:  #000;
+}
+
+#banner #bannerImage li .Goods2 {
+    margin-top: 10%;
+    margin-left: 5%;
+    color:  #fff;
+}
+
+#banner #bannerImage li h1 {
+    width: 60%;
+    font-size: 40px;
+    font-weight: 550;
+}
+
+#banner #bannerImage li p {
+    width: 40%;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+#banner #bannerImage li .GoodsButton {
+    margin-bottom: 10%;
+}
+
+#bannerImage2 {
+    display: none;;
+}
+
+#bannerImage2 img {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.bannerText2 {
+    position: relative;;
+    width: 90%;
+    height: 200px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px 
+    rgba(37, 37, 37, 0.5);
+    display: none;
+    z-index: 0;
+}
+
+.GoodsButton {
+    width: 100px;
+    border-radius: 5px;
+    background-color: #146fb4;
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.GoodsButton:hover{
+    background-color: #165fa4;
+}
+
+#banner #bannerImage li .GoodsButton {
+    margin-top: 20px;
+}
+
+#banner #bannerList {
+    float: right;
+    width: 64px;
+    height: 24px;
+    background:  rgb(249, 197, 206);
+    border-radius: 12px;
+    margin-right: 30px;
+    margin-top: -30px;
+}
+
+#banner #bannerList li {
+    float: right;
+    margin-left: 10px;
+    margin-top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #666;
+    font-size: 0px;
+    text-align: center;
+    line-height: 15px;
+}
+
+#banner #bannerList li:first-child {
+    margin-right: 15px;
+}
+
+#banner #bannerList li:last-child {
+    margin-left: 0;
+}
+
+#banner #bannerButton {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 100px;
+}
+
+#banner .stop {
+    margin: 0 10px;
+    background-color:  #666;
+    width: 40px;
+    height: 40px;
+    color:  #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#banner .prev {
+    margin: 0 10px;
+    background-color:  #666;
+    width: 40px;
+    height: 40px;
+    color:  #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#banner .next {
+    margin: 0 10px;
+    background-color:  #666;
+    width: 40px;
+    height: 40px;
+    color:  #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.goodsLists {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+.goodsList {
+    margin: 20px 25px;
+}
+
+.goodsList img {
+    height: 45px;
+    width: 100%;
+}
+
+.goodsList p {
+    font-size: larger;
+    font-weight: 550;
+    text-decoration: underline;
+    color:  #165fa4;
+}
+
+.goodsList:first-child img{
+    padding: 0 12.5px;
+}
+
+
+/* goodsShelf -----------------------------------------------------------------------------*/
+
+/* Shelf1 */
+.goodsShelf {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.goodsShelf .goods {
+    width: 24%;
+    margin-top: 30px;
+    border: 0.001px solid white;
+    box-shadow: 0px 1px 2px 0px 
+    rgba(60, 60, 60, 0.5);
+}
+
+.goodsShelf .goods img {
+    width: 100%;
+    height: 40%;
+}
+
+.goodsShelf .goods .goodsText {
+    height: 37%;
+}
+
+.goodsShelf .goods h3 {
+    margin-left: 5%;
+    background-color: rgb(164, 4, 4);
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.goodsShelf .goods h2 {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 80%;
+    font-size: 1.7vw;
+}
+
+.goodsShelf .goods p {
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 10%;
+    width: 87.5%;
+    font-size: 16px;
+}
+
+.goodsShelf .goods .GoodsButton {
+    margin-left: 2.5%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 35%;
+}
+
+
+.goodsShelf .goods #newGoods1 {
+    margin-bottom: 30px;
+}
+
+/* Shelf2 */
+.title {
+    margin-left: 5%;
+    font-size: 40px;
+    margin-bottom: -25px;
+}
+
+.goodsShelf .goods #newGoods2 h3 {
+    width: 100px;
+}
+
+.goodsShelf .goods #newGoods2 h2 {
+    margin-top: 2%;
+}
+
+.goodsShelf .goods #newGoods2 p {
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+.goodsShelf .goods #newGood2 {
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+.goodsShelf .goods h4 {
+    margin-left: 5%;
+    margin-top: -5px;
+    color: #165fa4;
+}
+
+.goodsShelf .goods svg {
+    margin-bottom: -2.5px;
+    margin-left: 5px;
+    height: 15px;
+    width: 15px;
+    transition: transform 1s;
+}
+
+.goodsShelf .goods svg:hover {
+    transform: translate(10px,0);
+}
+
+.goodsShelf .goods h4:hover {
+    text-decoration: underline #165fa4;
+}
+
+/* bigGoods -----------------------------------------------------------------------------*/
+
+.bigGoods {
+    background-image: url(../images/gldn-XSS-Hero-Xbox-Series-S_VP5-1596x600.avif);
+    background-size: 100% 100%;
+    width: 90%;
+    height: 100%;
+    margin: 100px auto;
+}
+
+.bigGoods img {
+    display: none;
+}
+
+.bigGoods .goodsText {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 15%;
+}
+
+.bigGoods h1 {
+    width: 50%;
+    font-size: 40px;
+    font-weight: 550;
+}
+
+.bigGoods p {
+    width: 35%;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.bigGoods .GoodsButton {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px
+}
+
+/* aboutMicrosoft  */
+
+.aboutMicrosoft {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 5%;
+}
+
+.aboutMicrosoft p {
+    float: left;
+    font-size: 15px;
+}
+
+.aboutMicrosoft img {
+    float: left;
+    height: 35px;
+    width: 35px;
+    margin-top: -5px;
+    margin-left: 20px;
+}
+
+#pgup {
+    position: sticky;
+    float: right;
+    bottom: 12.5px;
+    margin-right: 0.75%;
+    margin-top: 70px;
+    height: 40px;
+    width: 120px;
+    border-radius: 2.5px;
+    line-height: 40px;
+    text-align: center;
+    background-color:  #e1e1e1;
+}
+
+#pgup:hover {
+    background-color:  #fff;
+    box-shadow: 0px 1px 2px 0px 
+    rgba(60, 60, 60, 0.5);
+}
+
+#pgup svg {
+    float: left;
+    margin: 10px 10px;
+    margin-right: -12.5px;
+    width: 20px;
+    height: 20px;
+}
+
+/* footer -----------------------------------------------------------------------------*/
+
+.footer {
+    margin-top: 250px;
+    background-color:  #f2f2f2;
+}
+
+.footer .aboutWeb {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.footer dl {
+    float: left;
+    width: 16.6%;
+    padding-top: 30px;
+    height: 300px;
+}
+
+.footer dt {
+    color: #5d5e63;
+    font-size: 15px;
+}
+
+.footer dd {
+    font-size: 11px;
+    margin-top: 14px;
+    color: #838982;
+}
+
+.footer .copyright {
+    padding-top: 50px;
+    font-size: 11px;
+    background-color:  #f2f2f2;
+}
+
+.footer .copyright .left svg {
+    float: left;
+    margin-right: 5px;
+}
+
+.footer .copyright .left span {
+    float: left;
+    margin-top: 4px;
+    margin-left: 25px;
+}
+
+.footer .copyright .right {
+    float: right;
+}
+
+.footer .copyright .right span {
+    margin-left: 25px;
+}
+
+.footer a:hover {
+    color: #000;
+    text-decoration: underline 0.75px #000 solid;
+}
+
+.footer .empty {
+    padding-top: 20px;
+}
+
+/* 动画 */
+
+@keyframes emerge {
+    0% {opacity: 0;}
+    20% {opacity: 0.2;}
+    40% {opacity: 0.4;}
+    60% {opacity: 0.6;}
+    80% {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+@keyframes fade {
+    0% {opacity: 1;}
+    20% {opacity: 0.8;}
+    40% {opacity: 0.6;}
+    60% {opacity: 0.4;}
+    80% {opacity: 0.2;}
+    100% {opacity: 0;}
+}
+
+/* 多媒体查询 ---------------------------------------------------------------------------- */
+
+/* 总体 */
+@media screen and (max-width:1086px) and (min-width:540px) {
+
+    .wrapper {
+        width: 95%;
+    }
+}
+
+
+/* 头部 */
+@media screen and (max-width:1380px) {
+
+    .header .headerHidden1 {
+        display: none;
+    }
+
+    .header .right li {
+        margin-right: 0px;
+    }
+
+    .header .right #searchButton {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width:1086px) {
+
+    .header .headerEmerge1 {
+        display: block;
+    }
+
+    .header .headerHidden2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:850px) {
+    
+    .header li:hover {
+        border-bottom: none;
+    }    
+
+    .header #logo {
+        display: none;
+    }
+
+    .header .left {
+        display: none;
+    }
+
+    .header #showInformationButton {
+        display: none;
+    }
+
+    .header #orderButton {
+        display: block;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .header #searchButton {
+        float: left;
+    }
+
+    .header #shop {
+        margin-right: -20px;
+    }
+
+    .header .user img {
+        height: 30px;
+        width: 30px;
+        margin-top: -5px;
+    }
+
+    .header #logo2 {
+        display: block;
+    }
+/* js 相关 */
+
+    .header #search input {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .header #search #searchCancel {
+        display: none;
+    }
+
+    .header #search #searchCancel2 svg {
+        display: block;
+    }
+}
+
+/* 轮播图 */
+@media screen and (max-width:1086px) and (min-width:850px) {
+   
+    #bannerImage1 {
+        display: none;
+    }
+
+    #bannerImage2 {
+        display: block;
+    } 
+
+    #bannerImage2 img{
+        margin-bottom: -150px;
+        z-index: -1;
+    } 
+
+    #banner .bannerText2 {
+        display: block;
+    }
+
+    #banner .bannerText3 {
+        display: none;
+    }
+    
+    #banner #bannerImage li h1 {
+        width: 80%;
+        padding-top: 30px;
+        margin-left: 5%;
+        font-size: 25px;
+    }
+    
+    #banner #bannerImage li p {
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    #banner #bannerImage .GoodsButton {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    #bannerImage1 {
+        display: none;
+    }
+
+    #bannerImage2 {
+        display: block;
+    } 
+
+    #banner .bannerText3 {
+        display: block;
+    }
+
+    #banner #bannerImage li h1 {
+        width: 90%;
+        font-size: 25px;
+    }
+    
+    #banner #bannerImage li p {
+        width: 80%;
+    }
+}
+
+/* 大图 */
+@media screen and (max-width:1086px) and (min-width:850px) {
+
+    .bigGoods {
+        background-image: none;
+    }
+
+    .bigGoods img {
+        display: block;
+        width: 100%;
+        margin-bottom: -50px;
+    }
+
+    .bigGoods .goodsText {
+        display: none;
+    }
+
+    .bigGoods .bannerText2 {
+        display: block;
+        margin-left: 5%;
+    }
+
+    .bigGoods .bannerText2 * {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:1086px) {
+
+    .bigGoods {
+        background-image: none;
+    }
+
+    .bigGoods img {
+        display: block;
+        width: 100%;
+    }
+
+    .bigGoods .goodsText h1 {
+        width: 90%;
+        font-size: 30px;
+        margin-left: -5%;
+    }
+    
+    .bigGoods .goodsText p {
+        width: 80%;
+        margin-left: -5%;
+    }
+
+    .bigGoods .goodsText .GoodsButton {
+        margin-left: -5%;
+    }
+}
+
+/* 货架 */
+@media screen and (max-width:1380px) and (min-width:1086px) {
+    
+    .goodsShelf2 #newGoods2 {
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+
+    .goodsShelf2 .goods .move {
+        margin-bottom: 20%; 
+    }
+}
+
+@media screen and (max-width:1086px) and (min-width:540px) {
+
+    .goodsShelf .goods {
+        width: 49%;
+    }
+
+    .goodsShelf .goods h2 {
+        font-size: 2.85vw;
+    }
+
+    .goodsShelf .goods p {
+        margin-top: 20px;
+    }
+
+    .goodsShelf2 .goods .move {
+        margin-bottom: 20%; 
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .goodsShelf .goods {
+        width: 100%;
+    }
+
+    .goodsShelf .goods img {
+        width: 100%;
+    }
+
+    .goodsShelf .goods h2 {
+        font-size: 25px;
+    }
+}
+
+/* 底部 */ 
+@media screen and (max-width:1086px) and (min-width:540px) {
+
+    .footer dl {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .footer dl {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1086px) {
+
+    .copyright .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .copyright .left span {
+        margin-left: 0px;
+    }
+    
+    .footer .copyright .right span:first-child {
+        margin-left: 0px;
+    }
+}
